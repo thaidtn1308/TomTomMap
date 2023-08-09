@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            credentials {
+                username = "ThaiDTN"
+                password = "QIXpUTuBCxyXh7cV3hO4SQKpAF3vea23"
+            }
+            url = uri("https://repositories.tomtom.com/artifactory/maven")
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            credentials {
+                username = "ThaiDTN"
+                password = "QIXpUTuBCxyXh7cV3hO4SQKpAF3vea23"
+            }
+            url = uri("https://repositories.tomtom.com/artifactory/maven")
+        }
+    }
+}
+rootProject.name = "TomTomMap"
+include ':app'
